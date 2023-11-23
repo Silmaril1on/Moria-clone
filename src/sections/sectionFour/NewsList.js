@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { slideUp } from "../../framerMotion/motionValues";
 
 function NewsList() {
-  const [effect, setEFfect] = useState(true);
+  const [effect] = useState(true);
   return (
     <section>
       <motion.div
