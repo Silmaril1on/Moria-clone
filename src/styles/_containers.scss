@@ -1,0 +1,42 @@
+@mixin column() {
+  display: flex;
+  flex-direction: column;
+}
+@mixin row() {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-c {
+  @include column;
+  justify-content: center;
+}
+.column-sb {
+  @include column;
+  justify-content: space-between;
+}
+.column-se {
+  @include column;
+  justify-content: space-evenly;
+}
+.column-se {
+  @include column;
+  justify-content: space-evenly;
+}
+
+.row-c {
+  @include row;
+  justify-content: center;
+}
+.row-sb {
+  @include row;
+  justify-content: space-between;
+}
+.row-se {
+  @include row;
+  justify-content: space-evenly;
+}
+.row-sa {
+  @include row;
+  justify-content: space-around;
+}

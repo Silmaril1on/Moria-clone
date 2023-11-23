@@ -1,0 +1,130 @@
+@import "./containers";
+
+.primary-button {
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    black 40%,
+    rgb(32, 32, 32),
+    rgb(48, 47, 47)
+  );
+  cursor: pointer;
+  color: $white;
+  border: none;
+  display: flex;
+  font-family: $primary;
+  font-weight: 600;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-transform: capitalize;
+  transition: 0.3s ease;
+  width: auto;
+  z-index: 5;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        ellipse at bottom,
+        rgba(255, 187, 0, 0.199) 25%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(11, 11, 11, 0) 100%
+      ),
+      radial-gradient(
+        ellipse at bottom,
+        rgba(11, 11, 11, 0.5) 0,
+        rgba(187, 11, 11, 0) 10%,
+        rgba(11, 11, 11, 0) 50%
+      );
+    transition: 0.3s ease;
+    right: -100%;
+    z-index: -1;
+  }
+
+  &:hover:after {
+    right: 0;
+  }
+}
+
+.primary-line {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(
+      to right,
+      rgba(224, 238, 241, 0.164),
+      rgb(224, 238, 241),
+      rgba(224, 238, 241, 0.158)
+    );
+  }
+}
+
+.grey-hover {
+  &:hover {
+    color: $grey;
+  }
+}
+
+.white-hover {
+  &:hover {
+    transition: 0.4s ease;
+    color: $white;
+  }
+}
+
+.scroll-line {
+  margin-left: 7.5px;
+  width: 1px;
+  height: 150px;
+  background: linear-gradient(to top, #e0eef1, rgba(224, 238, 241, 0));
+  opacity: 0.5;
+}
+
+.primary-shade {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      270deg,
+      $black,
+      rgba(12, 11, 14, 0) 10%,
+      rgba(12, 11, 14, 0) 90%,
+      $black
+    ),
+    linear-gradient(
+      to bottom,
+      $black,
+      rgba(12, 11, 14, 0) 40%,
+      rgba(12, 11, 14, 0) 60%,
+      $black
+    );
+}
+
+.primary-p {
+  color: $grey;
+  font-family: $secondary;
+  line-height: 30px;
+  text-align: center;
+}
+
+.cursor {
+  background-color: #e0eef141;
+  width: 500px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(180px);
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}

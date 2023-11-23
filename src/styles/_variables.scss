@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;0,600;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,700;1,200&display=swap");
+
+$grey: rgba(224, 238, 241, 0.6);
+$white: #e0eef1;
+$black: #0c0b0e;
+$gold: #fddf97;
+
+$colors: (
+  "grey": $grey,
+  "white": $white,
+  "black": $black,
+  "gold": $gold,
+);
+
+$primary: Bitter;
+$secondary: Raleway;
+
+$base-padding: 5px;
+$base-margin: 5px;
+
+$base-border-radius: 20px;
+
+$xxs-font-size: 0.4rem;
+$xs-font-size: 0.7rem;
+$small-font-size: 1.1rem;
+$medium-font-size: 1.5rem;
+$large-font-size: 2rem;
+$xl-font-size: 2.7rem;
