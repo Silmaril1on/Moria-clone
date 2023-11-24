@@ -17,8 +17,8 @@ function SectionTwo() {
       >
         <source src={video} type="video/mp4" />
       </video>
-      <section className="row-c mt-6 mw-8 w-full">
-        <div className="color-white column-c align-i-c p-4 w-full mw-6">
+      <section className="responsive-column-c mt-6 w-full mw-1400">
+        <div className="color-white column-c align-i-c p-4 w-full mw-900">
           <AnimatedHeader
             className="font-f-primary mr-2 responsive-h"
             text="Explore a World of"
@@ -45,7 +45,7 @@ function SectionTwo() {
           </motion.p>
         </div>
         <div className="w-full h-full">
-          <img className="w-full h-600" src={dwarf} alt="dwarf" />
+          <img className="w-full h-auto" src={dwarf} alt="dwarf" />
         </div>
       </section>
     </main>

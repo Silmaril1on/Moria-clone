@@ -12,7 +12,7 @@ function ScrollContent() {
           <div className="h-600 mt-6 mb-6 column-c align-i-c" key={info.id}>
             <h1 className="w-full mw-450 display-f pl-5 m-3">
               <AnimatedHeader
-                className="font-f-primary mr-2 font-s-md"
+                className="font-f-primary  mr-2 font-s-md"
                 text={info.header}
               />
             </h1>

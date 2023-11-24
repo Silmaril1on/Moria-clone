@@ -14,7 +14,7 @@ function Modal() {
           variants={PopUp}
           initial="hidden"
           animate="visible"
-          className="color-white font-f-primary h-300 w-400 position-f column-se index-5 bg-black right-20 bottom-20"
+          className="color-white font-f-primary h-300 w-9 mw-400 position-f column-se index-5 bg-black right-20 bottom-20"
         >
           <BorderSvg />
           <div className="ml-4 h-50 w-60">

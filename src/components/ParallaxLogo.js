@@ -19,8 +19,8 @@ function ParallaxLogo() {
     <div
       className={
         scaleLogo
-          ? "w-full mw-700 position-s top-0 index-4 column-c align-i-c"
-          : "w-full mw-700 position-s top-n30 index-4 column-c align-i-c time-lg transform-scale-sm ease-e"
+          ? "w-full mw-700 position-s top-0 index-4 column-c align-i-c desktop-size"
+          : "w-full mw-700 position-s top-n30 index-4 column-c align-i-c time-lg transform-scale-sm ease-e desktop-size"
       }
     >
       <img className="w-700 h-auto" src={logo} alt="" />

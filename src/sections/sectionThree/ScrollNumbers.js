@@ -14,10 +14,10 @@ function ScrollNumbers() {
   window.addEventListener("scroll", changeOnScroll);
 
   return (
-    <div className="column-c align-i-c h-600 position-s top-120 left-4 w-200">
+    <div className="column-c align-i-c h-600 position-s top-120 scroll-numbers left-0 w-200">
       <ScrollSvg />
       <span className="font-f-primary">{numbers}</span>
-      <h6 className="color-grey font-f-secondary mt-2 mb-2 font-w-400">
+      <h6 className="color-grey font-f-secondary text-a-c mt-2 mb-2 font-w-400">
         Fathoms Deep
       </h6>
       <div className="transform-rotate-full">

@@ -12,7 +12,7 @@ function SideMenu() {
 
   return (
     <aside className="overflow-h">
-      <button className="primary-button p-2" onClick={openSideBar}>
+      <button className="primary-button p-1" onClick={openSideBar}>
         <BorderSvg />
         {openSide ? (
           <IoCloseSharp className="font-s-md" />

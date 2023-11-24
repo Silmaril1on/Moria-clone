@@ -12,8 +12,8 @@ import freeRange from "../../assets/freeRange.png";
 
 function SectionFive() {
   return (
-    <section className="w-full primary-line mb-2 h-full mt-7 color-white position-r column-c">
-      <div className="w-full position-a top-0 left-0 h-full">
+    <section className=" w-full primary-line mb-2 h-full mt-7 color-white position-r column-c">
+      <div className="w-full  position-a top-0 left-0 h-full">
         <img className="w-full h-full" src={image} alt="global" />
       </div>
       <div className="w-full position-r index-1 h-550 column-c align-i-c">
@@ -32,7 +32,7 @@ function SectionFive() {
           variants={imageOpacity}
           initial="hidden"
           whileInView="visible"
-          className="color-grey mt-2 font-f-secondary line-h-30 w-full mw-400 text-a-c"
+          className="color-grey responsive-p mt-2 font-f-secondary line-h-30 w-full mw-400 text-a-c"
         >
           Adventure awaits in our growing Discord community. Join to discover
           all things Return to Moria.
@@ -43,14 +43,14 @@ function SectionFive() {
           join now
         </div>
       </div>
-      <div className="w-full p-2 row-sb index-1">
+      <div className="w-full p-2 responsive-column-c align-i-c index-1">
         <div className="h-50 m-2 w-auto">
           <img src={logo} className="h-50 w-auto" alt="moria" />
         </div>
-        <div>
-          <img className="mr-5" src={north} alt="north" />
-          <img className="mr-5" src={freeRange} alt="freeRange" />
-          <img className="mr-5" src={me} alt="me" />
+        <div className="responsive-column-c align-i-c">
+          <img className="m-2" src={north} alt="north" />
+          <img className="m-2" src={freeRange} alt="freeRange" />
+          <img className="m-2" src={me} alt="me" />
         </div>
       </div>
     </section>

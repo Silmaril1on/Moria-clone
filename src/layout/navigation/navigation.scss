@@ -1,0 +1,13 @@
+.nav-bar {
+  @media screen and (min-width: 1200px) {
+    height: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    aside {
+      button {
+        padding: 10px;
+      }
+    }
+  }
+}

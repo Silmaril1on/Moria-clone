@@ -3,7 +3,7 @@ $breakpoints: (
   "sm": 480px,
   "md": 720px,
   "lg": 950px,
-  "xl": 1250px,
+  "xl": 1200px,
 );
 
 @mixin xs {
@@ -62,5 +62,40 @@ $breakpoints: (
   justify-content: center;
   @media screen and (min-width: 1000px) {
     flex-direction: row;
+  }
+}
+
+.mobile-size {
+  @include xs {
+    display: flex;
+  }
+  @include sm {
+    display: flex;
+  }
+  @include md {
+    display: flex;
+  }
+  @include lg {
+    display: none;
+  }
+  @include xl {
+    display: none;
+  }
+}
+.desktop-size {
+  @include xs {
+    display: none;
+  }
+  @include sm {
+    display: none;
+  }
+  @include md {
+    display: none;
+  }
+  @include lg {
+    display: flex;
+  }
+  @include xl {
+    display: flex;
   }
 }

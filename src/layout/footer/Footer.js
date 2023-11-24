@@ -7,17 +7,21 @@ import teen from "../../assets/teen.webp";
 
 function Footer() {
   return (
-    <footer className="w-full p-2 column-c h-auto">
+    <footer className="column-c w-full p-2 column-c h-auto">
       <div className="responsive-column-c w-full">
         <FooterLinks />
         <Sign />
       </div>
-      <div className="row-sb m-2 p-2">
+      <div className="responsive-column-c m-2 p-2">
         <div className="color-grey w-full mw-8 column-c font-f-secondary">
           <div className="row-sa text-t-cap mw-500 ">
-            <h5 className="mr-2 white-hover cursor-p">privary prolicy</h5>
-            <h5 className="mr-2 white-hover cursor-p">terms of service</h5>
-            <h5 className="mr-2 white-hover cursor-p">
+            <h5 className="mr-2 white-hover cursor-p color-white">
+              privary prolicy
+            </h5>
+            <h5 className="mr-2 white-hover cursor-p color-white">
+              terms of service
+            </h5>
+            <h5 className="mr-2 white-hover cursor-p color-white">
               end user license agreements
             </h5>
           </div>

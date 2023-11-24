@@ -21,7 +21,7 @@ function NewsList() {
           return (
             <motion.div
               variants={slideUp}
-              className="news-card m-3 p-2 w-3 overflow-h position-r color-grey font-f-secondary"
+              className="news-card w-full h-full m-1 p-1 overflow-h position-r color-grey font-f-secondary"
               key={id}
             >
               <BorderSvg />
@@ -47,7 +47,7 @@ function NewsList() {
                 ) : (
                   ""
                 )}
-                <p className="p-3 line-h-30">{info}</p>
+                <p className="p-3 line-h-30 responsive-p">{info}</p>
               </div>
               {news.icon && news.iconName ? (
                 <div className="m-3 position-r index-1 display-f flex-d-row align-i-c justify-c-fs">
