@@ -1,7 +1,7 @@
 import React from "react";
 import moriaData from "../../database/moriaData";
 import AnimatedHeader from "../../components/AnimatedHeader";
-import { staggerOpacity, imageOpacity } from "../../framerMotion/motionValues";
+import { imageOpacity } from "../../framerMotion/motionValues";
 import { motion } from "framer-motion";
 import ScrollNumbers from "./ScrollNumbers";
 
@@ -26,11 +26,7 @@ function MobileSection() {
                   whileInView="visible"
                   className="w-300 h-300"
                 >
-                  <img
-                    className="w-full h-full"
-                    src={item.image}
-                    alt="data-image"
-                  />
+                  <img className="w-full h-full" src={item.image} alt="data" />
                 </motion.div>
                 <p className="color-grey mw-500 p-1 font-f-secondary line-h-20 text-a-c responsive-p">
                   {item.info}
